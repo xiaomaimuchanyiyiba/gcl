@@ -23,6 +23,9 @@ function init() {
     if [[ ${URL} =~ "http://" ]]; then
         initAsHTTPUrl
     fi
+    if [[ ${URL} =~ "https://" ]]; then
+        initAsHTTPUrl
+    fi
     if [[ ${URL} =~ "git@" ]]; then
         initAsSSHUrl
     fi
